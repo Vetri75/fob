@@ -739,7 +739,13 @@ a {
     letter-spacing: .1em;
 }
 
-
+.len-ce h1{
+    font-family: Britania;
+    color: #c4ab8a;
+}
+.len-ce p{
+    margin-bottom: 20px;
+}
 
 
 
@@ -979,7 +985,11 @@ fieldset{
 .img-as{
     height: 60px;
 }
-
+.oc-dscls h2{
+    font-family: Britania;
+    color: #c4ab8a;
+    margin-bottom: 30px;
+}
 
 
 
