@@ -20,7 +20,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">    
 
 
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="modules/main.css">
+    <link rel="stylesheet" href="modules/simple-lightbox.css?v2.14.0" />
 </head>
 <body>
 
@@ -66,12 +67,12 @@
                 <h2>Jeeva</h2>
               
             </div>
-            <div>
+            <div class="gallery">
             <div class="macin-sdc">
-                <div><img src="img/Jeeva/10.jpg"></div>
+                <a href="img/Jeeva/10.jpg"><img src="img/Jeeva/10.jpg"></a>
             </div>
             <div class="macin-sdc">
-                <div><img src="img/Jeeva/12.jpg"></div>
+                <a href="img/Jeeva/12.jpg"><img src="img/Jeeva/12.jpg"></a>
             </div>
             <div class="macin-sdc">
                 <div style="display: flex; width: 50%; margin-top: 5%; ">
@@ -151,6 +152,12 @@
 </footer>
 
 
-    <script src="main.js"></script>
+<script src="modules/main.js"></script>
+<script src="modules/simple-lightbox.js?v2.14.0"></script>
+<script>
+(function() {
+    var $gallery = new SimpleLightbox('.gallery a', {});
+})();
+</script>
 </body>
 </html>

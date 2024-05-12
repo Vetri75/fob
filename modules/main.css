@@ -9,27 +9,27 @@
 }
 @font-face{
     font-family: Britania;
-    src:url(font/Britania.otf);
+    src:url(../font/Britania.otf);
 }
 @font-face{
     font-family: sugo;
-    src:url(font/sugo.ttf);
+    src:url(../font/sugo.ttf);
 }
 @font-face{
     font-family: sugoo;
-    src:url(font/Sugo2.ttf);
+    src:url(../font/Sugo2.ttf);
 }
 @font-face{
     font-family: sherila;
-    src:url(font/Sherilla.ttf);
+    src:url(../font/Sherilla.ttf);
 }
 @font-face{
     font-family: famosa;
-    src:url(font/Famosa.otf);
+    src:url(../font/Famosa.otf);
 }
 @font-face{
     font-family: qanora;
-    src:url(font/qanora.ttf);
+    src:url(../font/qanora.ttf);
 }
 
 .material-symbols-outlined{
@@ -489,6 +489,7 @@ a {
 .client-says-section{
     background-color: #fff;
     box-sizing: border-box;
+   height: auto;
 
 }
 .slc-caa h6{
@@ -517,7 +518,9 @@ a {
     justify-content: center;
 }
 .testimonials-slider{
-    padding-top: 50px ;
+    padding-top: 50px;
+    max-height: 250px;
+
 }
 .testimonial-item {
     display: none;
@@ -541,14 +544,17 @@ a {
     margin-top: 20px;
 }
 
-.client-details h3 {
+.client-details a h3 {
+    text-transform: capitalize;
     font-family: Britania;
     font-weight: 100;
     color: rgb(196, 171, 138);
     font-size: 18px;
     margin-top: 20px;
 }
-
+.client-details a h3:hover{
+    color: #bb1525;
+}
 
 .client-says-section p{
     line-height: 1.8;
@@ -570,6 +576,9 @@ a {
 }
 .arrow-container {
     display: flex;
+    padding-top: 10%;
+    position: relative;
+    top: auto;
     margin-top: 50px;
     justify-content: center;
     gap: 150px ;
@@ -897,7 +906,9 @@ fieldset{
 
 /* Kishore */
 
+
 .macin-sdc{
+    display: inline-block;
     align-items: center;
     justify-content: center;
 }
@@ -991,7 +1002,14 @@ fieldset{
     margin-bottom: 30px;
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
+.lightbox {
+    animation: fadeIn 0.3s ease;
+}
 
 
 

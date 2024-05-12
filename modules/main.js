@@ -1,5 +1,6 @@
 
 
+
  
  // Your JavaScript code (script.js)
 
@@ -146,14 +147,9 @@ function showTestimonial(index) {
 
     updateTestimonialContent(currentTestimonialIndex);
 
-    // Check if current testimonial is the last one
-    if (currentTestimonialIndex === lastTestimonialIndex) {
-        document.querySelector('.arrow.next .fa-arrow-right').style.color = '#ff7f50'; // Change arrow color to orange when last testimonial reached
-        document.querySelector('.arrow-text').style.color = '#ff7f50'; // Change hover text color to orange when last testimonial reached
-    } else {
-        document.querySelector('.arrow.next .fa-arrow-right').style.color = '#1a2438'; // Reset arrow color to default
-        document.querySelector('.arrow-text').style.color = '#1a2438'; // Reset hover text color to default
-    }
+    // Change arrow color based on current testimonial index
+    document.querySelector('.arrow.next .fa-arrow-right').style.color = currentTestimonialIndex === lastTestimonialIndex ? '#ff7f50' : '#1a2438'; // Change next arrow color to orange when last testimonial reached
+    document.querySelector('.arrow.prev .fa-arrow-left').style.color = currentTestimonialIndex === 0 ? '#ff7f50' : '#1a2438'; // Change previous arrow color to orange when first testimonial reached
 }
 
 function updateTestimonialContent(index) {
@@ -163,11 +159,15 @@ function updateTestimonialContent(index) {
 }
 
 function nextTestimonial() {
-    showTestimonial(currentTestimonialIndex + 1);
+    if (currentTestimonialIndex < lastTestimonialIndex) {
+        showTestimonial(currentTestimonialIndex + 1);
+    }
 }
 
 function prevTestimonial() {
-    showTestimonial(currentTestimonialIndex - 1);
+    if (currentTestimonialIndex > 0) {
+        showTestimonial(currentTestimonialIndex - 1);
+    }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -180,6 +180,9 @@ document.addEventListener('DOMContentLoaded', function () {
         nextTestimonial();
     });
 });
+
+
+
 
 
 
