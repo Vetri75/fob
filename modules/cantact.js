@@ -15,66 +15,64 @@ form.addEventListener("submit", function (e) {
 
     // Reset error messages display
     errorMessages.forEach(msg => msg.style.display = "none");
-    errorMessages[0].style.display = "none"; // Hide "Form submission failed" error
+    errorMessages[0].style.display = "none"; 
 
     // Reset input fields styling
     resetInputStyling();
 
-    // Validate each field
     let hasError = false;
 
     if (firstname === "" && lastname === "") {
-        errorMessages[1].style.display = "block"; // Show "Name is required" error
+        errorMessages[1].style.display = "block"; 
         addInputErrorStyle(document.getElementById("firstname"));
         addInputErrorStyle(document.getElementById("lastname"));
         hasError = true;
     } else {
         if (firstname === "") {
-            errorMessages[2].style.display = "block"; // Show "First Name is required" error
+            errorMessages[2].style.display = "block"; 
             addInputErrorStyle(document.getElementById("firstname"));
             hasError = true;
         }
         if (lastname === "") {
-            errorMessages[3].style.display = "block"; // Show "Last Name is required" error
+            errorMessages[3].style.display = "block"; 
             addInputErrorStyle(document.getElementById("lastname"));
             hasError = true;
         }
     }
 
     if (email === "") {
-        errorMessages[4].style.display = "block"; // Show "Email Address is required" error
+        errorMessages[4].style.display = "block"; 
         addInputErrorStyle(document.getElementById("email"));
         hasError = true;
     }
 
-    // Phone number validation
     if (phoneno === "") {
-        errorMessages[5].style.display = "block"; // Show "Phone Number is required" error
+        errorMessages[5].style.display = "block"; 
         addInputErrorStyle(document.getElementById("phoneno"));
         hasError = true;
     } else if (phoneno.length < 10) {
-        errorMessages[6].style.display = "block"; // Show "Give correct phone number" error
+        errorMessages[6].style.display = "block"; 
         addInputErrorStyle(document.getElementById("phoneno"));
         hasError = true;
     }
 
     if (dateofevent === "") {
-        errorMessages[7].style.display = "block"; // Show "Date of Events is required" error
+        errorMessages[7].style.display = "block"; 
         addInputErrorStyle(document.getElementById("dateofevent"));
         hasError = true;
     }
     if (eventdetails === "") {
-        errorMessages[8].style.display = "block"; // Show "Event Details is required" error
+        errorMessages[8].style.display = "block"; 
         addInputErrorStyle(document.getElementById("eventdetails"));
         hasError = true;
     }
     if (eventlocation === "") {
-        errorMessages[9].style.display = "block"; // Show "Event Location is required" error
+        errorMessages[9].style.display = "block"; 
         addInputErrorStyle(document.getElementById("eventlocation"));
         hasError = true;
     }
     if (guestcount === "") {
-        errorMessages[10].style.display = "block"; // Show "Approx Guest Count is required" error
+        errorMessages[10].style.display = "block"; 
         addInputErrorStyle(document.getElementById("guestcount"));
         hasError = true;
     }
@@ -89,7 +87,6 @@ form.addEventListener("submit", function (e) {
     send(firstname, lastname, email, phoneno, dateofevent, eventdetails, eventlocation, guestcount);
 });
 
-// Your existing code...
 
 function send(firstname, lname, email, phno, doe, eventd, eventl, guestc) {
     // Construct email body
@@ -112,11 +109,11 @@ function send(firstname, lname, email, phno, doe, eventd, eventl, guestc) {
         Body: mailc
     }).then(
         () => {
-            console.log("Email sent successfully."); // Log success message
-            // Hide the form
+            console.log("Email sent successfully."); 
+           
             form.style.display = "none";
             document.getElementById("complas-sa").style.display = "none";
-            // Show the thank you message
+            
             document.getElementById("sap-con").style.display = "block";
             document.getElementById("thank-you-message").style.display = "block";
         }
@@ -149,13 +146,11 @@ phoneInput.addEventListener("input", function(event) {
     const maxLength = 10;
     sanitizedValue = sanitizedValue.slice(0, maxLength);
     
-    // Format the phone number as three digits, followed by a space, three digits, followed by a space, four digits
     if (sanitizedValue.length > 6) {
         sanitizedValue = sanitizedValue.slice(0, 3) + ' ' + sanitizedValue.slice(3, 6) + ' ' + sanitizedValue.slice(6);
     } else if (sanitizedValue.length > 3) {
         sanitizedValue = sanitizedValue.slice(0, 3) + ' ' + sanitizedValue.slice(3);
     }
 
-    // Update input value
     event.target.value = sanitizedValue;
 });

@@ -50,8 +50,7 @@
   }
   .mpsdc-sd {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust min and max width as needed */
-    /* grid-template-rows: repeat(4, 1fr);  Set four rows */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     grid-gap: 10px;
 }
 
@@ -66,7 +65,7 @@
   }
   .imdsc-da img{
     width: 100vw;
-    height: 270px; /* Ensure the image fills the entire container */
+    height: 270px; 
     object-fit: cover; 
   }
 
@@ -153,8 +152,8 @@ a {
 #scroll-icon {
     position: absolute;
     top: 88%;
-    left: 50%; /* Change from right to left */
-    transform: translateX(-50%); /* Add this line */
+    left: 50%; 
+    transform: translateX(-50%); 
     z-index: 1000;
     font-size: 24px;
     color: white;
@@ -200,17 +199,17 @@ a {
 /* Mobile Nav */
 
 .sidenav {
-    height: 100%; /* 100% Full-height */
+    height: 100%; 
     width: 0;
-    display: none; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
     top: 0;
     right: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
   }
   
   /* The navigation menu links */
@@ -237,7 +236,7 @@ a {
     border-bottom: solid 1px #818181;
 }
   
-  /* When you mouse over the navigation links, change their color */
+  
   .sidenav a:hover {
     color: #f1f1f1;
   }
@@ -245,7 +244,6 @@ a {
     color: #d6d3d3;
   }
   
-  /* Position and style the close button (top right corner) */
   .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -253,7 +251,6 @@ a {
     font-size: 36px;
   }
   
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   .openbtn{
     margin-right: 2%;
     margin-top: -10%;
@@ -269,11 +266,6 @@ a {
 .sidenav .active {
     color: #f4f4f4;
 }
-
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-
-
 
 /* Video Showcase content */
 
@@ -327,18 +319,13 @@ a {
 .video-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* Two columns */
-    /* Three rows */
     gap: 6px;
-    /* Adjust the gap value as needed */
-  
     justify-content: center;
 }
 
 .video-container {
     position: relative;
     overflow: hidden;
-    /* 16:9 aspect ratio (height: 9/16 = 0.5625) */
 }
 
 .play-button {
@@ -352,8 +339,6 @@ a {
 .play-button img {
     width: 100%;
     height: auto;
-   
-    /* Adjust the max-height as needed */
     display: block;
 }
 
@@ -389,8 +374,8 @@ a {
 }
 
 .overlay iframe {
-    width: 90vw; /* 70% of the viewport width */
-    height: 95vh; /* 90% of the viewport height */
+    width: 90vw; 
+    height: 95vh; 
   
 }
 
@@ -448,17 +433,17 @@ a {
 }
 
 .grid-item:hover img {
-    transform: scale(1.1); /* Zoom in by 10% */
-    opacity: 0.8; /* Reduce opacity to 80% */
+    transform: scale(1.1); 
+    opacity: 0.8; 
 }
 .hover-fde{
     position: absolute;
-    top: 50%; /* Center vertically */
+    top: 50%;
     left: 0;
     width: 95.5%;
     height: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Black with 70% transparency */
-    transform: translateY(-50%); /* Adjust for centering */
+    background-color: rgba(0, 0, 0, 0.7); 
+    transform: translateY(-50%); 
     transition: height 0.3s ease;
 }
 .dskmc{
@@ -474,10 +459,10 @@ a {
     font-family: famosa;
 }
 .grid-item:hover .hover-efd {
-    height: 100%; /* Reveal the overlay from center to top and bottom */
+    height: 100%; 
 }
 .grid-item:hover .hover-fde {
-    height: 100%; /* Reveal the overlay from center to top and bottom */
+    height: 100%; 
 }
 .grid-item:hover .dskmc{
     opacity: 1;
@@ -485,9 +470,6 @@ a {
 .dskmc{
     display: none;
 }
-
-
-  /* Whats my client says*/
 
 /* Testimonial Section Styles */
 
@@ -530,7 +512,7 @@ a {
 .testimonial-item {
     display: none;
     text-align: center;
-    width: 100%; /* Adjust the maximum width as needed */
+    width: 100%;
     margin: 0 auto;
 }
 .testimonial-item p{
@@ -589,7 +571,7 @@ a {
     margin-top: 50px;
     justify-content: center;
     gap: 150px ;
-    align-items: center; /* Adjust the width as needed */
+    align-items: center; 
   }
   
   .arrow-wrapper {
@@ -606,13 +588,13 @@ a {
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
-    transition: opacity 0.3s, top 0.5s ease-in-out; /* Add transitions for opacity and top */
+    transition: opacity 0.3s, top 0.5s ease-in-out;
 }
 
 .arrow-wrapper:hover .arrow-text {
     opacity: 1;
     top: 100%;
-    transition: opacity 0.3s, top 0.5s ease-in-out; /* Add transitions for opacity and top */
+    transition: opacity 0.3s, top 0.5s ease-in-out;
 }
 
   
@@ -629,10 +611,6 @@ a {
         opacity: 1;
     }
 }
-/* Your existing CSS styles */
-
-/* Add any additional styles as needed */
-
 
 
 /*Footer*/
@@ -729,7 +707,7 @@ a {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 80vh; /* Adjust this value to control the parallax effect */
+    height: 80vh; 
 }
 
 .parallax-image {
@@ -741,7 +719,7 @@ a {
     background-image: url("img/photo-show.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Ensure this property is set for parallax effect */
+    background-attachment: fixed; 
     background-position: center;
     display: flex;
     align-items: center;
@@ -749,7 +727,7 @@ a {
 }
 
 .parallax-image h3 {
-    font-family: 'famosa', sans-serif; /* Make sure the font is correctly specified */
+    font-family: 'famosa', sans-serif; 
     text-transform: uppercase;
     font-size: 18px;
     color: #fbf7f4;
@@ -889,21 +867,21 @@ fieldset{
 .nds-dsc{
     margin-top: 20px;
 }
-/* Headline Underline Effect */
+
 
 .headline::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -3px; /* Adjust as needed */
-    width: 50px; /* Initial width, half of headline width */
-    height: 3px; /* Adjust thickness as needed */
-    background-color: #ff6600; /* Adjust color as needed */
+    bottom: -3px;
+    width: 50px; 
+    height: 3px;
+    background-color: #ff6600;
     transition: width 0.3s ease;
 }
 
 .headline:hover::after {
-    width: 80px; /* Increase width to 100% on hover */
+    width: 80px; 
 }
 .kscs-scs{
     font-family: sugoo;
@@ -1025,9 +1003,6 @@ fieldset{
 
 
 
-
-
-
 /* Media Query */
 
 @media (min-width: 768px) {
@@ -1084,14 +1059,12 @@ fieldset{
     }
 }
 
-/* Media query for larger screens */
+
 @media (max-width: 768px) {
     .grid-container {
-        grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
-
-/* Media query for even larger screens */
 
 @media(max-width:640px){
     .oqwd-scc{
@@ -1123,7 +1096,7 @@ fieldset{
 
 @media (max-width: 540px) {
     .grid-container {
-        grid-template-columns: repeat(1, 1fr); /* One column for even larger screens */
+        grid-template-columns: repeat(1, 1fr);
     }
     .testimonial-item, .sd-ad p, .dldc-ca, .oc-dscls p{
         text-align: justify;

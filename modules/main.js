@@ -1,16 +1,10 @@
 
 
-
- 
- // Your JavaScript code (script.js)
-
- 
-
 document.addEventListener('DOMContentLoaded', function () {
     var backgroundVideo = document.getElementById('backgroundVideo');
     window.addEventListener('scroll', function () {
         var yPos = window.scrollY;
-        var speed = 0.4; // Adjust this for the parallax speed
+        var speed = 0.4;
 
         backgroundVideo.style.transform = 'translate3d(0, ' + yPos * speed + 'px, 0)';
     });
@@ -41,8 +35,6 @@ document.addEventListener('DOMContentLoaded', function () {
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
 
-    // Add your other event listeners and functions here...
-
 });
 
 
@@ -52,8 +44,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener("DOMContentLoaded", function() {
     var currentPage = window.location.pathname.split('/').pop();
-    var desktopLinks = document.querySelectorAll('.as-as a'); // targeting links within .as-as
-    var mobileLinks = document.querySelectorAll('.owe-cwccd a'); // targeting links within .owe-cwccd
+    var desktopLinks = document.querySelectorAll('.as-as a');
+    var mobileLinks = document.querySelectorAll('.owe-cwccd a');
 
     for(var i = 0; i < desktopLinks.length; i++) {
         if(desktopLinks[i].getAttribute('href') === currentPage) {
@@ -70,19 +62,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
-
-
+// Iframe Functionalities
 
 
 function closeOverlay() {
     var overlay = document.querySelector('.overlay');
     var iframe = overlay.querySelector('iframe');
 
-    // Set the iframe source to an empty string to stop the video
+    // The iframe source to an empty string to stop the video
     iframe.src = '';
-
-    // Hide the overlay
     overlay.style.display = 'none';
 }
 
@@ -93,13 +81,9 @@ function playVideo(videoIndex) {
     var overlay = document.querySelector('.overlay');
     var iframe = overlay.querySelector('iframe');
 
-    // Set the video URL based on the videoIndex
     var videoUrl = getVideoUrl(videoIndex);
 
-    // Set the iframe source
-    iframe.src = videoUrl + '&autoplay=1'; // Add the autoplay parameter
-
-    // Show the overlay
+    iframe.src = videoUrl + '&autoplay=1'; //Autoplay parameter
     overlay.style.display = 'flex';
 }
 
@@ -124,7 +108,7 @@ function getVideoUrl(videoIndex) {
 
 
 
-// Add these functions to your existing JavaScript code
+// Testimonial
 
 var currentTestimonialIndex = 0;
 var testimonials = document.querySelectorAll('.testimonial-item');
@@ -186,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
+// Mobile Nav Function
 
 
 function openNav() {
