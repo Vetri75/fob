@@ -402,6 +402,12 @@ a {
     font-size: 45px;
     cursor: pointer;
 }
+.note-qw{
+    display: flex;
+}
+.note-qw p{
+    font-size: 10px;
+}
 
 /* Photo Showcase content */
 
@@ -732,22 +738,24 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("img/photo-show.jpg"); /* Add your image URL here */
+    background-image: url("img/photo-show.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; /* Ensure this property is set for parallax effect */
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .parallax-image h3 {
-    font-family: famosa;
+    font-family: 'famosa', sans-serif; /* Make sure the font is correctly specified */
     text-transform: uppercase;
     font-size: 18px;
     color: #fbf7f4;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 }
+
 
 .len-ce h1{
     font-family: Britania;
@@ -1099,6 +1107,12 @@ fieldset{
     }
     .kas-asc{
         margin-top: 50px;
+    }
+    .note-qw h6{
+        font-size: 5px;
+    }
+    .note-qw p{
+        font-size: 5px;
     }
 }
 @media(max-width:600px){
