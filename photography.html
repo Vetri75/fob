@@ -69,7 +69,7 @@
 <body>
 
   <section class="okjn">
-    <img src="img/SBP.jpg" class="masn-video" id="backgroundVideo" style="width: 100vw;">
+    <img src="img/RANZ/0001.jpg" class="masn-video" id="backgroundVideo" style="width: 100vw;">
 
     <nav>
       <a href="index.html"><img src="img/WH.png"></a>
@@ -169,18 +169,12 @@
     </div>
   </section>
 
-
-  <div class="slider">
-    <img class="slide" src="img/Aishu/0.jpg" alt="Image 1">
-    <img class="slide" src="img/Aishu/1.jpg" alt="Image 2">
-    <img class="slide" src="img/Aishu/10.jpg" alt="Image 3">
-
-    <button class="prev" onclick="prevSlide()">&#10094;</button>
-    <button class="next" onclick="nextSlide()">&#10095;</button>
-  </div>
+<div>
+  <img src="img/THUMBNAIL/model melae.png">
+</div>
 
 
-  <section class="dldc-ca ef-ewf">
+  <section class="dldc-ca">
     <div class="contw-sdf">
       <div class="len-ce">
         <h1>Muses</h1>
@@ -234,10 +228,11 @@
             <div class="hover-fde"></div>
 
             <div class="dskmc"><span class="reade-more">read more</span><span
-                class="material-symbols-outlined">trending_flat</span></div>
+                class="material-symbols-outlined">trending_flat</span></div></a>
         </div>
       </div>
-      <img src="img/THUMBNAIL/010.png" style="max-width: 50%;">
+      <div style="display: flex; align-items: center;justify-content: center;">
+      <img src="img/THUMBNAIL/010.png" style="max-width: 50%;"></div>
     </div>
   </section>
 
@@ -270,36 +265,7 @@
     </div>
   </footer>
   <script src="modules/main.js"></script>
-  <script>
-    let slideIndex = 0;
-    const slides = document.querySelectorAll('.slide');
-
-    function showSlide(index) {
-      slides.forEach(slide => slide.style.display = 'none');
-      if (index >= slides.length) slideIndex = 0;
-      if (index < 0) slideIndex = slides.length - 1;
-      slides[slideIndex].style.display = 'block';
-    }
-
-    function nextSlide() {
-      slideIndex++;
-      showSlide(slideIndex);
-    }
-
-    function prevSlide() {
-      slideIndex--;
-      showSlide(slideIndex);
-    }
-
-    function autoSlide() {
-      nextSlide();
-    }
-
-    // Change slide every 5 seconds
-    setInterval(autoSlide, 5000);
-
-    showSlide(slideIndex);
-  </script>
+ 
 </body>
 
 </html>

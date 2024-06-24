@@ -17,9 +17,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     var backgroundVideo = document.getElementById('backgroundVideo');
-    
+
     // Function to play or pause the video when clicked
-    backgroundVideo.addEventListener('click', function() {
+    backgroundVideo.addEventListener('click', function () {
         if (backgroundVideo.paused) {
             backgroundVideo.play();
         } else {
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Function to handle the scroll icon click
     var scrollIcon = document.getElementById('scroll-icon');
-    scrollIcon.addEventListener('click', function(event) {
+    scrollIcon.addEventListener('click', function (event) {
         event.preventDefault();
         var target = document.getElementById('scrolls');
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -42,19 +42,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var currentPage = window.location.pathname.split('/').pop();
     var desktopLinks = document.querySelectorAll('.as-as a');
     var mobileLinks = document.querySelectorAll('.owe-cwccd a');
 
-    for(var i = 0; i < desktopLinks.length; i++) {
-        if(desktopLinks[i].getAttribute('href') === currentPage) {
+    for (var i = 0; i < desktopLinks.length; i++) {
+        if (desktopLinks[i].getAttribute('href') === currentPage) {
             desktopLinks[i].classList.add('active');
         }
     }
 
-    for(var j = 0; j < mobileLinks.length; j++) {
-        if(mobileLinks[j].getAttribute('href') === currentPage) {
+    for (var j = 0; j < mobileLinks.length; j++) {
+        if (mobileLinks[j].getAttribute('href') === currentPage) {
             mobileLinks[j].classList.add('active');
         }
     }
@@ -179,14 +179,14 @@ function openNav() {
     document.body.classList.add('no-scroll'); // Add class to prevent scrolling on the body
     document.getElementById("noniu-fx").style.display = "none"; // Hide scroll icon
 }
-  
+
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
     document.body.classList.remove('no-scroll'); // Remove class to allow scrolling on the body
     document.getElementById("noniu-fx").style.display = "block"; // Show scroll icon
 }
-  
+
 
 
 
