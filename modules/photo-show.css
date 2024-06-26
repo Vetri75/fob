@@ -1,0 +1,163 @@
+/* Aishu*/
+.box1-ais, .box2-ais, .box6-ais,.box4-ais, .box8-ais,.box2-amu,.box3-amu,.box4-amu,.box5-amu,.box8-amu,.box8-amu,.box1-je,.box2-je,.box1-sw,.box3-sw{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: stretch;
+}
+div.box1-ais img:nth-child(2){
+    padding: 7%;
+}
+div.box1-ais img:nth-child(3){
+    padding: 7%;
+}
+.box2-ais img:nth-child(1), .box3-ais img:nth-child(1),.box3-ais img:nth-child(2),
+.box5-ais img:nth-child(1),.box5-ais img:nth-child(2),
+.box6-ais img:nth-child(1),.box6-ais img:nth-child(3),
+.box7-ais img:nth-child(1),.box7-ais img:nth-child(2),.box7-ais img:nth-child(3),.box8-ais img:nth-child(1),
+.box1-amu img:nth-child(1),.box1-amu img:nth-child(2),.box2-amu img:nth-child(1),.box4-amu img:nth-child(1),
+.box6-amu img:nth-child(1),.box6-amu img:nth-child(2),.box6-amu img:nth-child(3),.box8-amu img:nth-child(1),
+.box8-amu img:nth-child(3).box9-amu img:nth-child(1),.box9-amu img:nth-child(4),.box10-amu img:nth-child(1),.box10-amu img:nth-child(2),
+.box10-amu img:nth-child(3),.box1-je img:nth-child(1),.box1-je img:nth-child(3),.box2-je img:nth-child(1),.box1-ran img:nth-child(1),.box1-ran img:nth-child(2),.box1-ran img:nth-child(3)
+.box1-sw img:nth-child(1),.box1-sw img:nth-child(3),.box3-sw img:nth-child(1),.box2-ka img:nth-child(1),.box2-ka img:nth-child(2),.box2-ka img:nth-child(3),
+.box3-ka img:nth-child(1),.box3-ka img:nth-child(2)
+{
+    padding-right: 2px;
+}
+.box1-ais img:nth-child(4){
+    padding-top: 5px;
+}
+.box1-ais img:nth-child(1){
+    padding-bottom: 5px;
+}
+.box3-ais,.box5-ais,.box1-amu,.box7-amu,.box9-amu,.box3-ka{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: stretch;
+}
+.box3-ais{
+    margin-top: 10px;
+}
+.box4-ais img:nth-child(1),.box4-ais img:nth-child(2){
+    margin: 15% 0 3% 0;
+    
+}
+.box4-ais img:nth-child(1), .box4-ais img:nth-child(3){
+    padding-right: 3%;
+}
+.box4-ais img:nth-child(2),.box4-ais img:nth-child(4){
+    padding-left: 3%;
+    
+}
+
+.box4-ais img:nth-child(3),.box4-ais img:nth-child(4){
+    margin: 3% 0 15% 0;
+    
+}
+.box5-ais{
+    margin-top: 7px;
+}
+
+.box6-ais img:nth-child(3),.box6-ais img:nth-child(4){
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.box7-ais,.box6-amu,.box10-amu,.box1-ran,.box2-sw,.box2-ka{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: stretch;
+}
+.box6-amu{
+    margin-top: 9px;
+}
+.box7-ais{
+    margin: 7px;
+}
+
+/* Amuthaval*/
+
+.box3-amu{
+    margin: 10%;
+}
+.box3-amu img:nth-child(1){
+    padding-right: 5%;
+}
+.box3-amu img:nth-child(2){
+    padding-left: 5%;
+}
+.box5-amu img:nth-child(1),.box5-amu img:nth-child(4){
+    padding: 5%;
+}
+.box5-amu img:nth-child(1),.box5-amu img:nth-child(2){
+    margin-top: 5%;
+}
+.box5-amu img:nth-child(3),.box5-amu img:nth-child(4){
+    margin-bottom: 5%;
+}
+.box5-amu img:nth-child(2){
+    padding-bottom: 5px;
+}
+.box5-amu img:nth-child(3){
+    padding-top: 5px;
+}
+.box8-amu{
+    padding: 7% 0 10% 0;
+}
+.box8-amu img:nth-child(3),.box8-amu img:nth-child(4){
+    margin-top: 10px;
+}
+.box9-amu img:nth-child(2),.box9-amu img:nth-child(5){
+    padding: 20% 10% 20% 10%;
+}
+.box9-amu img:nth-child(4),.box9-amu img:nth-child(5),.box9-amu img:nth-child(6){
+    margin-top: 10px;
+}
+.box10-amu{
+    margin: 5% 0 6% 0;
+}
+
+/* Jeeva */
+
+.box1-je{
+    margin: 5% 0 7% 0;
+}
+.box1-je img:nth-child(3),.box1-je img:nth-child(4){
+    margin-top: 9px;
+}
+/* Ranjith */
+.ran-aw{
+    margin-top: 7px;
+}
+.box1-ran{
+    margin-top: 9%;
+}
+/* Swathi */
+
+.box1-sw img:nth-child(1),.box1-sw img:nth-child(2){
+    margin-top: 9%;
+}
+.box1-sw img:nth-child(3),.box1-sw img:nth-child(4){
+    margin: 5% 0 9% 0;
+}
+.box2-sw{
+    margin: 5% 0 7% 0;
+}
+.box3-sw{
+    margin-top: 5%;
+}
+.swq-thi{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+.box4-sw{
+    display: flex; 
+    width: 50%; 
+    margin: 5% 0 7% 0;
+}
+/* Kavin & Dharu */
+.kvi-an{
+    margin-top: 7px;
+}
+.box3-ka{
+    margin-top: 7px;
+}

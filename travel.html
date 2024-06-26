@@ -24,6 +24,84 @@
 
 
     <link rel="stylesheet" href="modules/main.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f0f0f0;
+        }
+        .grid-wrapper {
+            display: grid;
+            grid-template-areas:
+                "a a b b"
+                "a a c d"
+                "e f f g"
+                "h i j k";
+            grid-gap: 2px;
+            margin: auto;
+        }
+        .grid-wrapper > div {
+            position: relative;
+            overflow: hidden;
+        }
+        .grid-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+         
+            transition: transform 0.5s ease;
+        }
+        .grid-wrapper img:hover {
+            transform: scale(1.05);
+        }
+        .grid-wrapper .a { grid-area: a; }
+        .grid-wrapper .b { grid-area: b; }
+        .grid-wrapper .c { grid-area: c; }
+        .grid-wrapper .d { grid-area: d; }
+        .grid-wrapper .e { grid-area: e; }
+        .grid-wrapper .f { grid-area: f; }
+        .grid-wrapper .g { grid-area: g; }
+        .grid-wrapper .h { grid-area: h; }
+        .grid-wrapper .i { grid-area: i; }
+        .grid-wrapper .j { grid-area: j; }
+        .grid-wrapper .k { grid-area: k; }
+        @media (max-width: 768px) {
+            .grid-wrapper {
+                grid-template-areas:
+                    "a"
+                    "b"
+                    "c"
+                    "d"
+                    "e"
+                    "f"
+                    "g"
+                    "h"
+                    "i"
+                    "j"
+                    "k";
+                grid-auto-rows: 150px;
+            }
+        }
+        @media (max-width: 480px) {
+            .grid-wrapper {
+                grid-template-areas:
+                    "a"
+                    "b"
+                    "c"
+                    "d"
+                    "e"
+                    "f"
+                    "g"
+                    "h"
+                    "i"
+                    "j"
+                    "k";
+                grid-auto-rows: 100px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -65,57 +143,18 @@
 
     <section class="aspo-asse" style="background-color: #f4dcbc !important;">
         <div class="contw-sdfs">
-            <div>
-                <div class="macin-sdc">
-                    <div><img src="img/TRAVEL/14.JPG"></div>
-                </div>
-                <div
-                    style="display: flex; align-items: center; justify-content: center;gap: 2px; width: 100%; padding:0 10%;">
-                    <div style="width: 40%;">
-                        <img src="img/TRAVEL/13.JPG" style="width: 100%; height: auto; margin-bottom: -7px;">
-                        <img src="img/TRAVEL/16.jpeg" style="width: 100%; height: auto;">
-                    </div>
-                    <div style="width: 60%;">
-                        <img src="img/TRAVEL/1.JPG" style="width: 100%; height: auto;">
-                    </div>
-                </div>
-                <div
-                    style="display: flex; align-items: center; justify-content: center; gap: 2px; width: 100%; padding: 0 10%;">
-                    <div style="width: 60%;">
-                        <img src="img/TRAVEL/2.JPG" style="width: 100%; height: auto; margin-top: -7px;">
-                    </div>
-                    <div style="width: 40%;">
-                        <img src="img/TRAVEL/10.JPG" style="width: 100%; height: auto; margin-bottom: -7px;">
-                        <img src="img/TRAVEL/11.JPG" style="width: 100%; height: auto;">
-                    </div>
-                </div>
-                <div class="macin-sdc">
-                    <div style="display: flex; width: 33.3%;  margin-top: -7px;">
-                        <img src="img/TRAVEL/19.JPG" style="padding-right: 2px;">
-                        <img src="img/TRAVEL/15.jpeg" style="padding-right: 2px;">
-                        <img src="img/TRAVEL/8.JPG">
-
-                    </div>
-                </div>
-                <div class="macin-sdc">
-                    <div><img src="img/TRAVEL/7.JPG" style="margin-top: 9px;"></div>
-                </div>
-
-                <div class="macin-sdc">
-                    <div style="display: flex; width: 33.3%;">
-                        <img src="img/TRAVEL/17.jpeg" style="padding-right: 2px;">
-                        <img src="img/TRAVEL/3.JPG" style="padding-right: 2px;">
-                        <img src="img/TRAVEL/12.JPG">
-
-                    </div>
-                </div>
-                <div class="macin-sdc">
-                    <div><img src="img/TRAVEL/6.JPG" style="margin-top: 9px;"></div>
-                </div>
-                <div class="macin-sdc">
-                    <div><img src="img/TRAVEL/20.jpg" style="margin-bottom: -13px; margin-top: 2px;"></div>
-                </div>
-
+            <div class="grid-wrapper">
+                <div class="a"><img src="img/TRAVEL/14.JPG" alt="Travel Image 14"></div>
+                <div class="b"><img src="img/TRAVEL/1.JPG" alt="Travel Image 1"></div>
+                <div class="c"><img src="img/TRAVEL/2.JPG" alt="Travel Image 2"></div>
+                <div class="d"><img src="img/TRAVEL/3.JPG" alt="Travel Image 3"></div>
+                <div class="e"><img src="img/TRAVEL/6.JPG" alt="Travel Image 6"></div>
+                <div class="f"><img src="img/TRAVEL/7.jpg" alt="Travel Image 7"></div>
+                <div class="g"><img src="img/TRAVEL/8.JPG" alt="Travel Image 8"></div>
+                <div class="h"><img src="img/TRAVEL/10.JPG" alt="Travel Image 10"></div>
+                <div class="i"><img src="img/TRAVEL/11.JPG" alt="Travel Image 11"></div>
+                <div class="j"><img src="img/TRAVEL/13.JPG" alt="Travel Image 13"></div>
+                <div class="k"><img src="img/TRAVEL/15.jpeg" alt="Travel Image 15"></div>
             </div>
         </div>
     </section>
