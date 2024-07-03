@@ -6,12 +6,6 @@
     line-height: 1.8;
     font-family: "Lato", sans-serif;
     color: #a3a3a3;
-    -webkit-tap-highlight-color: transparent;
-    user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select:none;
 }
 
 @font-face {
@@ -132,7 +126,27 @@ section {
     width: 100%;
     margin: 0 auto;
 }
+.kjh-fsr{
+    padding-top: 0 !important;
+}
+.kjh-fss{
+    padding-bottom: 0 !important;
+}
+.centr-img {
+    background-color: #fbf7f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Adjust as needed */
+    overflow: hidden;
+}
 
+.centr-img img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
 .dso-cd {
     position: relative;
     height: 100vh;
@@ -679,12 +693,6 @@ a {
 
 /*Footer*/
 
-.cao-dca {
-
-    font-family: "Marcellus", serif;
-    font-weight: 200;
-    font-style: normal;
-}
 
 .cao-dcaa {
     font-size: 14px;
@@ -692,6 +700,7 @@ a {
     color: #fbf7f4;
 }
 .ca-dcas{
+    font-family: sans-serif;
     color: #fbf7f4;
     font-size: 15px;
 }
@@ -714,14 +723,16 @@ a {
 .kas-asc {
     align-items: center;
     justify-content: center;
+    display: block;
+    position: relative;
 }
 
-.kas-asc h3 {
+.kas-asc h3, .phone-no {
     font-family: "Marcellus", serif;
     color: #fbf7f4;
     font-weight: 100;
     font-size: medium;
-    line-height: 35px;
+    line-height: 35px; 
 }
 
 .oijc-cw {
@@ -778,7 +789,6 @@ a {
 .osiddwd {
     width: 100%;
 }
-
 .parallax-container {
     position: relative;
     overflow: hidden;
@@ -786,29 +796,15 @@ a {
     height: 80vh;
 }
 
-.parallax-image {
-    height: 100%;
-  position: relative;
-  background: url("img/photo-show.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-}
-
-.parallax-image h2 {
-    font-family: vulture;
+.content h2 {
+    font-family: vulture, sans-serif;
     font-size: 100px;
     font-weight: 100;
     color: #fbf7f4;
 }
-
+.ios .parallax-image {
+    background-attachment: scroll !important;
+}
 
 .len-ce h1 {
     font-family: Britania;
@@ -1010,9 +1006,6 @@ fieldset {
     margin-bottom: -7px;
 }
 
-.inl-ij {
-    margin-bottom: -10px !important;
-}
 
 .sherila {
     font-family: sherila;
@@ -1270,5 +1263,8 @@ fieldset {
 @media(max-width: 250px) {
     .sherila {
         font-size: 15px;
+    }
+    .content h2{
+        font-size: 50px;
     }
 }

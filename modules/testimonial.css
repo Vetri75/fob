@@ -1,0 +1,154 @@
+
+
+.client-says-section {
+    background-color: #fff;
+    box-sizing: border-box;
+    height: auto;
+    padding: 50px 0;
+}
+
+.slc-caa h6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.slc-caa h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Britania;
+    font-weight: 100;
+    color: #c4ab8a;
+}
+
+.slc-caa span {
+    font-family: famosa;
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+.fa-quote-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: #888;
+}
+
+.testimonials-slider {
+    padding-top: 50px;
+    max-height: 400px; /* Set a fixed maximum height to prevent size change */
+    min-height: 400px; /* Set a fixed minimum height to prevent size change */
+    overflow: hidden; /* Hide any overflow content */
+    position: relative;
+}
+
+.testimonial-item {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.testimonial-item.active {
+    opacity: 1;
+    position: relative;
+}
+
+.client-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.client-details a h3 {
+    text-transform: capitalize;
+    font-family: Britania;
+    font-weight: 100;
+    color: rgb(196, 171, 138);
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.client-details a h3:hover {
+    color: #bb1525;
+}
+
+.client-says-section p {
+    line-height: 1.8;
+}
+
+.fa-arrow-right {
+    font-size: 20px;
+    color: #1a2438;
+}
+
+.fa-arrow-right:hover {
+    cursor: pointer;
+}
+
+.bottom-d {
+    margin-top: 20px;
+}
+
+.arrow-container {
+    display: flex;
+    padding-top: 10%;
+    margin-bottom: -50px;
+    position: relative;
+    top: auto;
+    margin-top: 50px;
+    justify-content: center;
+    gap: 150px;
+    align-items: center;
+}
+
+.arrow-wrapper {
+    position: relative;
+    cursor: pointer;
+}
+
+.arrow-text {
+    font-family: famosa;
+    text-transform: uppercase;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s, top 0.5s ease-in-out;
+}
+
+.arrow-wrapper:hover .arrow-text {
+    opacity: 1;
+    top: 100%;
+    transition: opacity 0.3s, top 0.5s ease-in-out;
+}
+
+.fa-arrow-right {
+    font-size: 24px;
+    color: #1a2438;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

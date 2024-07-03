@@ -26,14 +26,8 @@
 
 
     <link rel="stylesheet" href="modules/main.css">
+    <!--<link rel="stylesheet" href="modules/testimonial.css">-->
     <style>
-        .parallax-container {
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            height: 80vh;
-        }
-
         .parallax-image {
             position: absolute;
             top: 0;
@@ -41,21 +35,13 @@
             width: 100%;
             height: 100%;
             background-image: url("img/photo-show.jpg");
+            background-attachment: fixed;
             background-size: cover;
             background-repeat: no-repeat;
-            background-attachment: fixed;
             background-position: center;
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-
-        .parallax-image h3 {
-            font-family: 'famosa', sans-serif;
-            text-transform: uppercase;
-            font-size: 18px;
-            color: #fbf7f4;
-            letter-spacing: 0.1em;
         }
     </style>
 </head>
@@ -345,9 +331,8 @@
                 </div>
 
                 <i class="fa-solid fa-quote-left fa-rotate-180 bottom-d"></i>
-            </div>
 
-            <!-- Navigation Arrows -->
+                <!-- Navigation Arrows -->
             <div class="arrow-container">
                 <div class="arrow-wrapper" id="prevText" onclick="prevTestimonial()" onmouseover="showPrevText()"
                     onmouseout="hideText()">
@@ -361,6 +346,9 @@
                 </div>
 
             </div>
+            </div>
+
+            
         </div>
     </section>
 
@@ -376,8 +364,8 @@
                 <a href="https://www.instagram.com/_frame_of_boy?igsh=bXZ2dnc0Mzk0d3ps" target="_blank" class="ok-cs"><i
                         class="fa-brands fa-instagram"></i></a>
                 <div class="kas-asc">
-                    <h3 class="cao-dca">frameofboy@gmail.com</h3>
-                    <p class="ca-dcas">Phone : 9444779510</p>
+                    <h3>frameofboy@gmail.com</h3>
+                    <h3>Phone : <span class="phone-no">9444</span>779510</h3>
                 </div>
             </div>
 
@@ -403,6 +391,7 @@
 
 
     <script src="modules/main.js"></script>
+    <!--<script src="modules/testimonial.js"></script>-->
 
 
 </body>
