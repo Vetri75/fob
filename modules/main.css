@@ -5,6 +5,7 @@
     box-sizing: border-box;
     line-height: 1.8;
     color: #a3a3a3;
+    -webkit-tap-highlight-color: transparent;
 }
 
 @font-face {
