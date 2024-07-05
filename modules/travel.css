@@ -19,6 +19,12 @@ body {
     overflow: hidden;
 }
 
+.grid-wrapper a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .grid-wrapper img {
     width: 100%;
     height: 100%;
