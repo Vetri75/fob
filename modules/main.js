@@ -120,6 +120,8 @@ function getVideoUrl(videoIndex) {
 var currentTestimonialIndex = 0;
 var testimonials = document.querySelectorAll('.testimonial-item');
 var lastTestimonialIndex = testimonials.length - 1;
+var startX = 0;
+var endX = 0;
 
 function showTestimonial(index) {
     if (index >= testimonials.length || index < 0) {
@@ -161,6 +163,22 @@ function prevTestimonial() {
     }
 }
 
+function handleTouchStart(event) {
+    startX = event.touches[0].clientX;
+}
+
+function handleTouchMove(event) {
+    endX = event.touches[0].clientX;
+}
+
+function handleTouchEnd() {
+    if (startX - endX > 50) {
+        nextTestimonial();
+    } else if (endX - startX > 50) {
+        prevTestimonial();
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     showTestimonial(currentTestimonialIndex);
 
@@ -170,6 +188,11 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('#nextText').addEventListener('click', function () {
         nextTestimonial();
     });
+
+    var slider = document.querySelector('.testimonials-slider');
+    slider.addEventListener('touchstart', handleTouchStart, false);
+    slider.addEventListener('touchmove', handleTouchMove, false);
+    slider.addEventListener('touchend', handleTouchEnd, false);
 });
 
 
