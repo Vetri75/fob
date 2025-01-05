@@ -1,4 +1,4 @@
 User-agent: *
-allow: /
+Allow: /
 Sitemap: https://frameofboy.netlify.app/sitemap.xml
 
